@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header .menuprincipal {
+    background-color: rgb(9, 9, 82);
+}
+
+header .menuprincipal .home {
+    display: flex;
+    padding: 25px 0 0 25px;
+}
+
+header .menuprincipal .carrito {
+    display: flex;
+    justify-content: end;
+    padding: 0 70px 35px 0;
+}
+
+header .menuprincipal .carrito i {
+    font-size: 30px;
+    transition: all .3s ease;
+}
+
+header .menuprincipal .carrito i:hover {
+    color: rgba(241, 243, 209, 0.701);
+}
+
+
+body {
+    background-color: rgba(241, 243, 209, 0.701);
+}
+
+/* NAV --------------------------------------------*/
+
+.t1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#iconosnav .t1 .t2 {
+    border-bottom: 2px solid aliceblue;
+    display: inline-block;
+}
+
+#iconosnav .t1 .t2:hover{
+    transform: scale(1.3);
+    transition: 500ms;
+}
+
+nav {
+    background-color: rgb(9, 9, 82);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.fa-solid:hover{
+    color: aliceblue;
+}
+
+/* FIN NAV -----------------------------------------*/
+
+/* RESEÑAS -----------------------------------------*/
+
+.reseñas {
+    background-color: rgb(9, 9, 82);
+    margin: 20px 0;
+    padding: 50px;
+}
+
+.reseñas h2 {
+    color: aliceblue;
+    font-family: "oxanium", sans-serif;
+    font-weight: 400;
+    border-bottom: 2px solid aliceblue;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.reseñas .caja-reseñas {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.reseñas1 {
+    border: 1px solid aliceblue;
+    background-color: rgba(23, 12, 119, 0.881);
+    border-radius: .2rem;
+    padding: 40px;
+}
+
+.reseñas1 cite {
+    display: flex;
+    margin-bottom: 35px;
+    color: aliceblue;
+}
+
+.reseñas1 cite i {
+    color: rgb(218, 255, 6);
+}
+
+.reseñas1 h3 {
+    display: flex;
+    font-family: "oxanium", sans-serif;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.reseñas1 p {
+    font-family: "oxanium", sans-serif;
+    color: aliceblue;
+}
+
+@media(width < 991px){
+    .reseñas .caja-reseñas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* FIN RESEÑAS -------------------------------------*/
+
+/* FOOTER ------------------------------------------*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fa-brands {
+    color: aliceblue;
+}
+
+.fa-regular {
+    color: aliceblue;
+}
+
+.ftext {
+    text-align: center;
+    color: aliceblue;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal
+}
+
+.ftext p {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: rgb(9, 9, 82);
+    padding: 50px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 15px;
+    color: aliceblue;
+    font-family: "Oxanium", sans-serif;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid aliceblue;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: rgba(241, 243, 209, 0.701);
+    padding-left: 6px;
+}
+
+.pay-links ul li a {
+    font-size: 20px;
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.pay-links ul li .fa-brands:hover {
+    color: rgba(241, 243, 209, 0.701);
+}
+
+.social-links ul li a {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.social-links ul li .fa-brands:hover {
+    color: rgba(241, 243, 209, 0.701);
+}
+
+.social-links ul li .fa-regular:hover {
+    color: rgba(241, 243, 209, 0.701);
+}
+
+@media(max-width:991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* FIN FOOTER -------------------------------------*/
+
+#menujuegos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    padding: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(9, 9, 82);
+}
+
+.itemmenu1:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+.itemmenu {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+
+@media(width < 991px) {
+    #menujuegos {
+        display: inline-block;
+    }
+}
+
+@media(width < 991px) {
+    #menujuegos .itemmenu{
+        margin-bottom: 15px;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal
+}
+
+.generos {
+    color: aliceblue;
+}
+
+/* Página de soporte*/
+
+.titulosoporte {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+.formulario {
+    padding: 15px;
+    margin: 0 20px 20px 20px;
+    background: rgb(9, 9, 82);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+.textof1 {
+    color: aliceblue;
+}
+.textof2 {
+    color: aliceblue;
+}
+.textof3 {
+    color: aliceblue;
+}
+/* Fin página de soporte */
+
+/* Página de softwares */
+.catsof {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+.soft1 {
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(9, 9, 82);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+.soft2 {
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(9, 9, 82);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+.soft3 {
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(9, 9, 82);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+/* Fin página de softwares */
+
+/* Página de juegos */
+
+.titujuegos {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+#juegos {
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(9, 9, 82);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+
+.juego2 {
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(9, 9, 82);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+.juego3 {
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(9, 9, 82);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+.juego4 {
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(9, 9, 82);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+.juego5 {
+    border-style: inset;
+    border-radius: 5px;
+    background-color: rgb(9, 9, 82);
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal
+}
+/* Fin página de juegos */
+
+
+/* Página Principal */
+
+.titulo_principal {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.titulo_principal h1 {
+    text-align: center;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+}
+
+/* Fin página Principal */
